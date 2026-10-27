@@ -11,8 +11,6 @@ Power BI, QGIS and Excel analysis of 2,774 satellite heat hotspots recorded in 9
 - **What to do instead: focus on where and when.** Terra Ronca and Serra Dourada hold **71.3%** of all hotspots, and hotspots concentrate between **August and October**. Days without rain show a moderate positive correlation with hotspots (r = 0.41).
 - **Recommendation:** do not adopt the 3-year skip. Keep recently burned areas on the inspection list and prioritize park sectors by hotspot history, season and drought, back-testing the ranking after each fire season.
 
-![Executive presentation](assets/01_cover.png)
-
 ## Project Overview
 
 This project, originally a capstone (TCC) at CBMGO, was restructured with a problem-solving method (**DEASA**: Define, Structure, Analyze, Solutions, Present):
