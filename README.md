@@ -29,6 +29,7 @@ This project, originally a capstone (TCC) at CBMGO, was restructured with a prob
 
 **What is ACERT?** ACERT is a problem-definition checklist created by mentor Ale Saito (EdukaNegócios) and taught as the first step of the DEASA method. It is not a widely known framework, so here is what each letter stands for. **ACERT is a Portuguese acronym**, which is why the letters do not match the English terms (for example, A = *Atores interessados* = Stakeholders, and E = *Escopo* = Scope):
 
+
 | Letter | Portuguese | English | Question it answers |
 | --- | --- | --- | --- |
 | **A** | Atores interessados | Stakeholders | Who decides, who is affected and who will use the result? |
@@ -39,21 +40,13 @@ This project, originally a capstone (TCC) at CBMGO, was restructured with a prob
 
 Applied to this project:
 
-| ACERT | Definition |
-| --- | --- |
-| **Actors** | CBMGO operational planning (decision maker): decide whether to adopt the 3-year skip · Unit commanders: plan inspections and prevention · Park managers: protect the conservation units · Civil Defense Operations Command (CODEC): monitoring and data support |
-| **Success criteria** | Confirm or reject the 3-year interval with local data; explain the result; propose a safer prioritization |
-| **Scope** | Heat hotspots inside the 9 Goiás state parks, 2016–2025 |
-| **Restrictions** | Satellite hotspots only (an indirect fire indicator); no field data on vegetation, grass cover or biomass; the external study was run in another ecosystem; limited staff |
-| **Time** | Capstone timeline (2026); commander survey applied from May 27 to June 2 |
-
-![ACERT](assets/method_acert.png)
+<img width="1452" height="792" alt="acert_firehp" src="https://github.com/user-attachments/assets/24dd203f-09a0-4d80-99ea-d36a826d7e2e" />
 
 ## Hypothesis Tree
 
 The question arrived as a closed hypothesis ("the 3-year interval applies here"), so it was structured as a **hypothesis tree with necessary conditions (AND logic)**: every condition must be true for the hypothesis to hold, and one false condition is enough to reject it. The three branches use different kinds of evidence (the project data, the ecology of the Cerrado and the validity of the measurement), which keeps them mutually exclusive.
 
-![Hypothesis Tree](assets/hypothesis_tree.png)
+<img width="1443" height="806" alt="image" src="https://github.com/user-attachments/assets/738d9150-0ea0-4f6f-82de-f2fef400200a" />
 
 C1 was tested first, because it can be answered directly with the hotspot data and decides the operational question. C2 was checked against the Cerrado literature, since no vegetation data was available.
 
@@ -113,7 +106,8 @@ A **commander survey** (Google Forms, 11 closed Likert questions) was answered b
 
 ## Results
 
-![Hypothesis results](assets/hypothesis_results.png)
+<img width="1455" height="806" alt="image" src="https://github.com/user-attachments/assets/33f0a288-2053-48fc-8450-5c882733b1f7" />
+
 
 | Condition | Main finding | Verdict |
 | --- | --- | --- |
@@ -195,13 +189,13 @@ This explanation is supported by the literature but **was not tested with projec
 | Test the grass hypothesis with MapBiomas land-cover and burned-area maps | 4 | Compare re-burn intervals by vegetation type |
 | Split every park into management sectors and normalize by park area | Investigate | Improve the dashboard before scaling the ranking |
 
-![Action Plan](assets/action_plan.png)
 
 **Pilot (5W2H):** before the season, rank park sectors by hotspot history, month and days without rain; keep recently burned sectors in the rounds; build firebreaks and patrol schedules in June–July; after the August–October season, compare the ranking with where new hotspots fell. Success indicators: **hit rate** (share of new hotspots in top-priority sectors) and **miss rate** (share in deprioritized sectors).
 
 Rough sizing: had the 3-year skip been applied, **208 of the 501 recurrences (41.5%)** would have happened in areas off the inspection list, and up to 320 (63.9%) if year 3 were also skipped.
 
-![Recommendation](assets/06_recommendation.png)
+<img width="1435" height="792" alt="image" src="https://github.com/user-attachments/assets/4ab1e8d3-867f-4998-a3a5-4c36788478b5" />
+
 
 ## Limitations
 
