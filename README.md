@@ -58,18 +58,20 @@ This project, originally a capstone (TCC) at CBMGO, was restructured with a prob
 
 ## Business Problem
 
-**Central question:** does the study's 3-year fuel-recovery interval hold for Goiás state parks, so that CBMGO can safely leave recently burned areas out of inspection rounds?
+This project, originally a capstone (TCC) at CBMGO, was restructured with a problem-solving method called **DEASA**, taught by mentor Ale Saito (EdukaNegócios). **DEASA is a Portuguese acronym**, which is why the letters do not match the English step names (for example, E = *Estruturar* = Structure, and S = *Soluções* = Solutions):
 
-**What is ACERT?** ACERT is a problem-definition checklist created by mentor Ale Saito (EdukaNegócios) and taught as the first step of the DEASA method. It is not a widely known framework, so here is what each letter stands for. **ACERT is a Portuguese acronym**, which is why the letters do not match the English terms (for example, A = *Atores interessados* = Stakeholders, and E = *Escopo* = Scope):
-
-
-| Letter | Portuguese | English | Question it answers |
+| Letter | Portuguese | English | What happens in this step |
 | --- | --- | --- | --- |
-| **A** | Atores interessados | Stakeholders | Who decides, who is affected and who will use the result? |
-| **C** | Critérios de sucesso | Success criteria | How will we know the problem has been solved? |
-| **E** | Escopo | Scope | What is included in the analysis, and what is left out? |
-| **R** | Restrições | Restrictions | Which limits on data, resources or rules must the analysis respect? |
-| **T** | Tempo | Time | What is the deadline, and which period do the data cover? |
+| **D** | Definir | Define | Frame the problem with the ACERT checklist (explained below) |
+| **E** | Estruturar | Structure | Break it down into a hypothesis tree with necessary conditions, plus a MECE root-cause tree |
+| **A** | Analisar | Analyze | Process the data in QGIS and Excel, run the statistical tests, check the ecological conditions against the literature and build a Power BI dashboard |
+| **S** | Soluções | Solutions | Develop solutions prioritized by evidence, impact and feasibility |
+| **A** | Apresentar | Present | Present the results in an executive deck built on the pyramid principle |
+
+
+**Central question:** does Cerrado vegetation in Goiás state parks take about three years to recover enough fuel to burn again, so that CBMGO can safely leave recently burned areas out of inspection rounds?
+
+**What is ACERT?** ACERT is a problem-definition checklist created by mentor Ale Saito (EdukaNegócios) and taught as the first step of the DEASA method. It is not a widely known framework, so here is what each letter stands for. Like DEASA, **ACERT is a Portuguese acronym**, which is why the letters do not match the English terms (for example, A = *Atores interessados* = Stakeholders, and E = *Escopo* = Scope):
 
 Applied to this project:
 
