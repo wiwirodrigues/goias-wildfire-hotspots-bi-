@@ -9,7 +9,7 @@
 
 # Does a 3-Year Fire Rule Hold in the Cerrado? Heat-Hotspot Recurrence in Goiás State Parks - Brazil
 
-Power BI, QGIS and Excel analysis of 2,774 satellite heat hotspots recorded in 9 Goiás state parks between 2016 and 2025. The Goiás Military Fire Department (CBMGO) received a study stating that, after a fire, fuel takes about **three years** to recover before the same area can burn again. If that held in Goiás, recently burned areas could be left out of inspection rounds for three years. This project tests whether the study's interval applies to the Cerrado, explains why it does not, and proposes a safer way to prioritize prevention.
+Power BI, QGIS and Excel analysis of 2,771 satellite heat hotspots recorded in 9 Goiás state parks between 2016 and 2025. The Goiás Military Fire Department (CBMGO) needed to answer an operational question: after a fire, does Cerrado vegetation take about three years to recover enough fuel to burn again? If so, recently burned areas could be left out of inspection rounds for three years. This project tests that assumption with ten years of satellite data, shows that the protection after a fire lasts about one year, not three, and proposes a safer way to prioritize prevention.
 
 **[View the interactive Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWRkNDQwN2QtOGRjOS00NjMwLTkzNTctMTBkMDZmZjY2YzhlIiwidCI6Ijk1NDYxM2ZhLWUzN2UtNDZkNi04NGYxLTJmYjNmMzY3MjExMyJ9)**
 ##  Sample Delimitation
@@ -26,16 +26,25 @@ Of the 12 Conservation Units (State Parks) originally mapped in the State of Goi
 * Serra Dourada State Park
 * Terra Ronca State Park
 
-> **Methodological Note:** The *Mata Atlântica*, *Serra de Caldas Novas*, and *Serra de Jaraguá* state parks were not included in the final sample due to the absence of temporal recurrence records within the analyzed period. This absence stems from inherent limitations of satellite remote sensing — such as sensor orbit timing not coinciding with the active fire event, short-duration fires that cease thermal anomaly emissions prior to the satellite overpass, or cloud cover interference during scanning.
+Recurrence (the same location burning again) was observed in 8 of them. Paraúna recorded a single hotspot.
 
+> **Methodological note:** The *Mata Atlântica*, *Serra de Caldas Novas* and *Serra de Jaraguá* state parks were excluded because no heat hotspot fell within their boundaries in the period, after the state-wide dataset was filtered by park limits. Satellite detection has known limits: small or short fires, or fires under cloud cover, may be missed. A park with no hotspot may therefore still have had undetected fires.
 
 ## Key Findings
 
-- **The 3-year interval does not hold in Goiás state parks.** Among 501 recurrent hotspots, the most common interval is **2 years** (mode), and **41.5%** came back within 2 years (208 of 501), inside the window the study would have left unchecked.
-- **The average agreed with the study, but the distribution did not.** The mean interval is **3.05 years**, close to the study's 3 years. The distribution is spread out, though, with about one quarter each at 2, 3 and 4 years, so 3 years is an average, not a safe minimum.
-- **Why so fast? Grasses are the leading explanation.** Cerrado studies report that the native grass layer recovers 70–80% of its biomass one year after fire and about 100% after two years, and invasive African grasses add even more fuel. This matches the 2-year mode. The external study was run outside the Cerrado and did not address grasses.
-- **What to do instead: focus on where and when.** Terra Ronca and Serra Dourada hold **71.3%** of all hotspots, and hotspots concentrate between **August and October**. Days without rain show a moderate positive correlation with hotspots (r = 0.41).
-- **Recommendation:** do not adopt the 3-year skip. Keep recently burned areas on the inspection list and prioritize park sectors by hotspot history, season and drought, back-testing the ranking after each fire season.
+- **The 3-year rule does not hold: fire protects an area for about one year, not three.** Burning in one year halves the odds of burning again the next year (odds ratio 0.54; p < 0.001). By the second year, the annual chance of a new fire has already doubled, from 6.4% to 12.7%, and it stays at that level in years 3 and 4 (13.4% and 16.2%).
+- **More than 1 in 5 burned areas burns again within 3 years.** Kaplan-Meier survival analysis shows that 12.5% of burned areas burned again within 2 years and 22.7% within 3 years (95% CI: 19.6–25.8%). A 3-year skip would leave exactly these areas off the inspection list.
+- **The most common interval was 2 years, consistent with the jump in risk in the second year.** Among the 499 recurrences, 2-year intervals were the most frequent (25.9%), followed closely by 4 and 3 years (23.4% and 22.4%).
+- **Three years is a typical gap, not a safe minimum.** The median interval between fires at the same location is 2.98 years, statistically no different from 3 (Wilcoxon, p = 0.26), and the mean is 3.05 years. The average is close to the assumption, but the risk returns long before it: what matters for inspections is when protection ends, not the average gap.
+- **Why protection ends so early: grasses are the leading explanation.** Cerrado studies report that the native grass layer recovers 70–80% of its biomass one year after fire and about 100% after two years, and invasive African grasses add even more fuel. This matches the jump in risk in the second year. This explanation comes from the literature and was not tested with project data.
+- **Where and when fire happens is predictable.**
+  - **Two parks:** Terra Ronca and Serra Dourada hold 71.3% of all hotspots.
+  - **Three months:** 90.8% of hotspots fall between August and October, and September was the peak month in 7 of 10 years.
+  - **Dry spells:** months with more days without rain have far more hotspots (Spearman ρ = 0.83 across monthly averages).
+  - **Clusters:** fire is spatially clustered (Moran's I = 0.33; p = 0.001).
+  - **Speed varies by park:** areas in Araguaia burn again faster (median 2.1 years) than in Serra Dourada (4.0 years).
+- **Recommendation:** do not adopt the 3-year skip. Keep recently burned areas on the inspection list from the second year on, prioritize park sectors by hotspot history, season and drought, and back-test the ranking after each fire season.
+- 
 
 ## Project Overview
 
