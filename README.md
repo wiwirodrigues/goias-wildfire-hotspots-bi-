@@ -46,22 +46,7 @@ Recurrence (the same location burning again) was observed in 8 of them. Paraúna
 
 **Verdict:** the hypothesis is rejected. Two necessary conditions fail, C1 with the recurrence data and C2 with the literature. C3 limits how precisely re-burns are measured, but not the direction of the conclusion.
 
-### Root-cause tree: why does the Cerrado burn again so fast?
 
-**Problem:** heat hotspots return to the same areas faster than the 3-year assumption.
-
-| Branch | Possible cause | Evidence |
-| --- | --- | --- |
-| **Fuel** | F1 The native grass layer recovers its biomass in 1–2 years | Literature: about 100% in 2 years |
-| | F2 Invasive African grasses (capim-gordura, braquiária) add more fuel | Literature: flames up to 2× taller |
-| **Weather** | W1 More days without rain, more hotspots | Data: Spearman ρ = 0.83 (monthly) |
-| | W2 Hotspots peak in the dry season | Data: 90.8% between August and October |
-| **Ignition** | I1 Farming and land-clearing burns near the parks | No data |
-| | I2 Access roads and human presence | No data |
-| **Site** | S1 A few parks concentrate hotspots | Data: 71.2% in 2 parks |
-| | S2 Fire clusters in space | Data: Moran's I = 0.33 |
-
-Grasses (F1, F2) are the leading explanation, supported by the literature, but they could not be tested with the project data.
 
 ## Dataset
 
