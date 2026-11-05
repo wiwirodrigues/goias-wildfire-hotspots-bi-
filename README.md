@@ -101,7 +101,7 @@ A **commander survey** (Google Forms, 11 closed Likert questions) was answered b
 | What we found | Number | What it means for CBMGO |
 | --- | --- | --- |
 | Protection after a fire lasts about 1 year | Annual chance of fire: 6.4% in year 1 → 12.7% in year 2 | Burned areas need inspection again from the second year |
-| Many burned areas burn again inside the 3-year window | 22.7% within 3 years | A 3-year skip would miss more than 1 in 5 re-burns |
+| Many burned areas burn again inside the 3-year window | 22.7% within 3 years | A 3-year skip would miss re-burns in more than 1 in 5 burned areas |
 | Three years is only the typical gap | Median 2.98 years; mode 2 years | The average cannot be used as a safe period |
 | Fire concentrates in two parks | 71.2% in Terra Ronca and Serra Dourada | Most prevention effort belongs there |
 | Fire concentrates in three months | 90.8% between August and October | Prevention must be ready before August |
@@ -245,22 +245,17 @@ The ~1.1 km grid was kept because it is larger than the satellite's position err
 ## Project Structure
 
 ```
-goias-wildfire-hotspots-bi/
+goias-wildfire-hotspots-bi-/
 │
 ├── README.md
 │
-├── data/
-│   ├── README.md                 (data dictionary)
-│   └── heat_hotspots_2016_2025.csv
-│
-├── python/
-│   └── recurrence_analysis.py    (statistical analysis)
-│
 ├── powerbi/
-│   └── wildfire_hotspots_dashboard.pbix
+│   └── fire_hotspots.pbix
 │
 └── assets/
-    ├── wildfire_hypothesis_tree.png
+    ├── executive_presentation_wildfires_cerrado_goias.pdf
+    ├── executive_presentation_wildfires_cerrado_goias.pptx
+    ├── hypothesis_tree.png
     └── dashboard_preview.png, dashboard_map.png, dashboard_heatmap.png
 ```
 
