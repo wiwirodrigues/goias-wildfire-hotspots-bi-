@@ -1,6 +1,6 @@
 # Does a 3-Year Fire Rule Hold in the Cerrado? Heat-Hotspot Recurrence in Goiás State Parks, Brazil
 
-Power BI, QGIS, Excel and Python analysis of 2,774 satellite heat hotspots recorded in 9 Goiás state parks between 2016 and 2025. The Goiás Military Fire Department (CBMGO) needed to answer an operational question: **after a fire, does Cerrado vegetation take about three years to recover enough fuel to burn again?** If so, recently burned areas could be left out of inspection rounds for three years. This project tests that assumption with ten years of satellite data, shows that the protection after a fire lasts about one year, not three, and proposes a safer way to prioritize prevention.
+Power BI, QGIS and Excel analysis of 2,774 satellite heat hotspots recorded in 9 Goiás state parks between 2016 and 2025. The Goiás Military Fire Department (CBMGO) needed to answer an operational question: **after a fire, does Cerrado vegetation take about three years to recover enough fuel to burn again?** If so, recently burned areas could be left out of inspection rounds for three years. This project tests that assumption with ten years of satellite data, shows that the protection after a fire lasts about one year, not three, and proposes a safer way to prioritize prevention.
 
 **[View the interactive Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWRkNDQwN2QtOGRjOS00NjMwLTkzNTctMTBkMDZmZjY2YzhlIiwidCI6Ijk1NDYxM2ZhLWUzN2UtNDZkNi04NGYxLTJmYjNmMzY3MjExMyJ9)**
 
@@ -242,7 +242,6 @@ The ~1.1 km grid was kept because it is larger than the satellite's position err
 
 - **QGIS:** spatial overlay of hotspots and park boundaries
 - **Excel:** data cleaning, frequency tables and first descriptive analysis
-- **Python:** event grouping, normality tests and statistical tests (scipy, pandas); see `analysis/recurrence_analysis.py`
 - **Power BI:** interactive dashboard
 - **Google Forms:** commander survey
 
@@ -256,9 +255,6 @@ goias-wildfire-hotspots-bi-/
 ├── data/
 │   ├── focos_final_powerbi.xlsx    (heat hotspots)
 │   └── ucs_com_frp_4326.xlsx       (state parks)
-│
-├── analysis/
-│   └── recurrence_analysis.py  (reproduces every number in this README)
 │
 ├── powerbi/
 │   └── fire_hotspots.pbix
