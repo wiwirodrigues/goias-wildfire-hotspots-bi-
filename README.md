@@ -199,6 +199,8 @@ A **commander survey** (Google Forms, 11 closed Likert questions) was answered b
 | 3 | 13.4% | 856 |
 | 4 | 16.2% | 698 |
 
+**How this differs from A1:** the two measures count time differently. This table uses calendar years (a fire in 2020 makes 2021 "year 1"), so year 1 can include fires up to almost two years apart. Kaplan-Meier (A1) uses the exact time elapsed since each fire, so it shows 3.3% within 12 months. Both show the same pattern: risk is low right after a fire and rises from the second year.
+
 ### A5. Sensitivity to the size of the area
 
 | Cell size | Burned areas | Re-burned within 3 years | Median interval | Chance of fire in year 1 → year 2 |
@@ -221,7 +223,7 @@ The ~1.1 km grid was kept because it is larger than the satellite's position err
 | --- | --- |
 | Wildfires demand a lot of attention from my unit | 100% agree |
 | I have difficulty identifying risk areas | 43.8% |
-| Main difficulties | Lack of personnel 93% · Lack of organized information 50% · Lack of adequate tools 31.3% |
+| Main difficulties | Lack of personnel 93.8% · Lack of organized information 50% · Lack of adequate tools 31.3% |
 | A dashboard showing high-risk areas would support prevention planning | 93.8% agree |
 | I am willing to use the proposed tool | 100% agree |
 
@@ -248,6 +250,10 @@ The ~1.1 km grid was kept because it is larger than the satellite's position err
 goias-wildfire-hotspots-bi-/
 │
 ├── README.md
+│
+├── data/
+│   ├── focos_final_powerbi.xlsx    (heat hotspots)
+│   └── ucs_com_frp_4326.xlsx       (state parks)
 │
 ├── powerbi/
 │   └── fire_hotspots.pbix
