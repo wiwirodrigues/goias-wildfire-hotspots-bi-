@@ -1,0 +1,43 @@
+statistic,value
+Hotspots (rows),2774
+Unique detections,2759
+Hotspots with FRP,1724
+Missing fire risk,27
+Share in top 2 parks %,71.3
+Share Aug-Oct %,90.8
+Years with September peak,7
+Burned cells (cell),717
+Burned cells (park + cell),724
+Fire events,1217
+Recurrences,500
+Cells burned more than once,350
+Median interval,2.98
+Mean interval,3.05
+Wilcoxon p / r,0.284 / 0.05
+Binomial below 3y / p / h,257 / 0.281 / 0.03
+KM re-burned within 1y % (first fire),3.4 (2.0-4.7)
+KM re-burned within 2y % (first fire),12.6 (10.2-15.1)
+KM re-burned within 3y % (first fire),22.9 (19.8-26.0)
+Cell-years,4904
+Logit OR (year 1 vs later) [95% CI] p,0.54 [0.41-0.71] p=0.0000
+Risk year 1 vs later %,6.5 vs 11.4
+"Spearman rain-free days x hotspots, monthly (n=12)",rho=0.83 p=0.001 | Pearson r=0.42 p=0.180
+"Spearman fire risk x hotspots, monthly (n=12)",rho=0.85 p=0.000 | Pearson r=0.51 p=0.094
+"Spearman precipitation x hotspots, monthly (n=12)",rho=-0.35 p=0.263 | Pearson r=-0.30 p=0.341
+"Spearman rain-free days x hotspots, year-month (n=69)",rho=0.36 p=0.002 | Pearson r=0.07 p=0.593
+Mann-Whitney FRP median <3 vs >=3 / p,8.44 vs 9.10 / 0.047 (n=473)
+Kruskal-Wallis interval H(df) p e2,H(7)=43.5 p=2.691e-07 e2=0.074
+Kruskal-Wallis FRP H(df) p e2,H(7)=174.7 p=2.601e-34 e2=0.098
+Chi-square months / Cramer V,9247 / 0.55
+Mann-Kendall hotspots slope p tau,-16.0 0.107 -0.42
+Mann-Kendall events slope p tau,-9.3 0.049 -0.51
+"Moran's I (8 neighbours, burned cells) / p",0.33 / 0.001
+Normality interval (n=500),mean=3.05 median=2.98 skew=0.80 SW p=5.7e-15
+Normality FRP (n=1724),mean=13.84 median=8.20 skew=5.38 SW p=1.6e-56
+Normality rain-free days (n=2774),mean=26.62 median=6.00 skew=1.12 SW p=3.2e-51
+Normality precipitation (n=2774),mean=0.36 median=0.00 skew=8.49 SW p=4.6e-77
+Normality fire risk (n=2747),mean=0.93 median=1.00 skew=-3.52 SW p=2.4e-71
+Cell 0.0034: cells / 3y re-burn % / median / y1->y2,2165 / 5.8 / 3.9 / 1.4->3.0
+Cell 0.01: cells / 3y re-burn % / median / y1->y2,717 / 22.9 / 3.0 / 6.5->12.7
+Cell 0.02: cells / 3y re-burn % / median / y1->y2,261 / 44.3 / 2.1 / 16.2->25.4
+Cell 0.05: cells / 3y re-burn % / median / y1->y2,78 / 60.3 / 1.7 / 37.3->41.9
