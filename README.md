@@ -15,6 +15,9 @@ Power BI, QGIS and Excel analysis of 2,774 satellite heat hotspots recorded in 9
    ![The risk of a new fire doubles in the second year](assets/5_risk_doubles.png)
 
 - **More than 1 in 5 burned areas burns again within 3 years** (at the ~1 km scale used). Kaplan-Meier survival analysis shows that 12.6% of burned areas burned again within 2 years and 22.9% within 3 years (95% CI: 19.8–26.0%). A 3-year skip would leave exactly these areas off the inspection list.
+
+   ![Share of burned areas that burned again, by years since the fire (Kaplan-Meier)](assets/km_reburn.png)
+
 - **The most common interval was 2 years, consistent with the jump in risk in the second year.** Among the 500 recurrences, 2-year intervals were the most frequent (26.0%), followed closely by 4 and 3 years (23.2% and 22.4%).
 - **Three years is a typical gap, not a safe minimum.** The median interval between fires at the same location is 2.98 years, statistically no different from 3 (Wilcoxon, p = 0.28), and the mean is 3.05 years. The average is close to the assumption, but the risk returns long before it: what matters for inspections is when protection ends, not the average gap.
 - **Why protection ends so early: grasses are the leading explanation.** Cerrado studies report that the native grass layer recovers 70–80% of its biomass one year after fire and about 100% after two years, and invasive African grasses add even more fuel. This matches the jump in risk in the second year. This explanation comes from the literature and was not tested with project data.
@@ -284,6 +287,7 @@ goias-wildfire-hotspots-bi-/
     ├── 3_hypothesis_tree.png
     ├── 5_risk_doubles.png
     ├── 9_where_when.png
+    ├── km_reburn.png
     └── dashboard_preview.png, dashboard_map.png, dashboard_heatmap.png
 ```
 
