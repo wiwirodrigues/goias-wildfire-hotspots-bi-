@@ -8,24 +8,6 @@ Power BI, QGIS and Excel analysis of 2,774 satellite heat hotspots recorded in 9
 
 ![Executive presentation cover](assets/1_cover.png)
 
-## Sample Delimitation
-
-Of the 12 State Parks in Goiás, **9 recorded at least one heat hotspot** between 2016 and 2025 and form the sample:
-
-- Águas do Paraíso State Park
-- Águas Lindas State Park
-- Altamiro de Moura Pacheco State Park
-- Araguaia State Park
-- João Leite State Park
-- Paraúna State Park
-- Pirineus State Park
-- Serra Dourada State Park
-- Terra Ronca State Park
-
-Recurrence (the same location burning again) was observed in 8 of them. Paraúna recorded a single hotspot.
-
-> **Methodological note:** The *Mata Atlântica*, *Serra de Caldas Novas* and *Serra de Jaraguá* state parks were excluded because no heat hotspot fell within their boundaries in the period, after the state-wide dataset was filtered by park limits. Satellite detection has known limits: small or short fires, or fires under cloud cover, may be missed. A park with no hotspot may therefore still have had undetected fires.
-
 ## Key Findings
 
 - **The 3-year rule does not hold: fire protects an area for about one year, not three.** Burning in one year halves the odds of burning again the next year (odds ratio 0.54; p < 0.001). By the second year, the annual chance of a new fire has already doubled, from 6.5% to 12.7%, and remains at or above that level in years 3 and 4 (13.5% and 16.5%).
@@ -62,19 +44,11 @@ Recurrence (the same location burning again) was observed in 8 of them. Paraúna
 
 **Heat hotspots** from INPE's [BDQueimadas](https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/) (NPP-375 / VIIRS satellite, Cerrado biome) and **state park boundaries** from SIGA, the Goiás State Environmental Geoinformation System.
 
-| Variable | Description |
-| --- | --- |
-| Park | State park where the hotspot falls (after the QGIS overlay) |
-| DateTime | Date and time of the satellite detection |
-| Latitude, Longitude | Hotspot coordinates (decimal degrees) |
-| DaysWithoutRain | Consecutive days without rain at detection (0–120) |
-| Precipitation | Precipitation (mm) |
-| FireRisk | INPE fire-risk index (0–1) |
-| FRP | Fire Radiative Power (MW), the intensity of the fire |
+The sample covers the 9 of Goiás's 12 state parks with at least one heat hotspot between 2016 and 2025.
 
 A **commander survey** (Google Forms, 11 closed Likert questions) was answered by 16 CBMGO unit commanders (94.1% response rate).
 
-Data preparation, statistical tests and full results are in the [Appendix](#appendix).
+Sample delimitation, variables, data preparation, statistical tests and full results are in the [Appendix](#appendix).
 
 ## Recommendations
 
@@ -113,7 +87,35 @@ Data preparation, statistical tests and full results are in the [Appendix](#appe
 
 ## Appendix
 
-### A1. Data preparation
+### A1. Sample delimitation
+Of the 12 State Parks in Goiás, **9 recorded at least one heat hotspot** between 2016 and 2025 and form the sample:
+
+- Águas do Paraíso State Park
+- Águas Lindas State Park
+- Altamiro de Moura Pacheco State Park
+- Araguaia State Park
+- João Leite State Park
+- Paraúna State Park
+- Pirineus State Park
+- Serra Dourada State Park
+- Terra Ronca State Park
+
+Recurrence (the same location burning again) was observed in 8 of them. Paraúna recorded a single hotspot.
+
+> **Methodological note:** The *Mata Atlântica*, *Serra de Caldas Novas* and *Serra de Jaraguá* state parks were excluded because no heat hotspot fell within their boundaries in the period, after the state-wide dataset was filtered by park limits. Satellite detection has known limits: small or short fires, or fires under cloud cover, may be missed. A park with no hotspot may therefore still have had undetected fires.
+
+### A2. Variables
+| Variable | Description |
+| --- | --- |
+| Park | State park where the hotspot falls (after the QGIS overlay) |
+| DateTime | Date and time of the satellite detection |
+| Latitude, Longitude | Hotspot coordinates (decimal degrees) |
+| DaysWithoutRain | Consecutive days without rain at detection (0–120) |
+| Precipitation | Precipitation (mm) |
+| FireRisk | INPE fire-risk index (0–1) |
+| FRP | Fire Radiative Power (MW), the intensity of the fire |
+
+### A3. Data preparation
 
 - Overlaid the state-wide hotspots on the park boundaries in QGIS, keeping only hotspots inside the parks
 - All 2,774 hotspots fall within the study period (2016–2025), so no record was removed. Rare but plausible values were kept: no data was removed for being extreme
@@ -125,7 +127,7 @@ Data preparation, statistical tests and full results are in the [Appendix](#appe
 - Treated hotspots in the same cell less than 180 days apart as **one fire event** (the same fire season)
 - Calculated the **interval of recurrence** as the time, in years, between consecutive fire events in the same cell: **500 recurrences** across 717 burned cells (350 of them burned more than once)
 
-### A2. Analysis and tests chosen
+### A4. Analysis and tests chosen
 
 1. **Descriptive analysis** of every variable (mean, median, quartiles, skewness, histograms).
 2. **Normality tests** (Shapiro-Wilk and Kolmogorov-Smirnov with Lilliefors correction): no variable is normal (p < 0.001), so **non-parametric tests** were used.
@@ -144,7 +146,7 @@ Data preparation, statistical tests and full results are in the [Appendix](#appe
 | Are hotspots increasing or decreasing? | Mann-Kendall + Sen's slope |
 | Does fire cluster in space? | Moran's I (999 permutations) |
 
-### A3. Results summary
+### A5. Results summary
 
 | What we found | Number | What it means for CBMGO |
 | --- | --- | --- |
@@ -155,7 +157,7 @@ Data preparation, statistical tests and full results are in the [Appendix](#appe
 | Fire concentrates in three months | 90.8% between August and October | Prevention must be ready before August |
 | Drought goes with fire | Spearman ρ = 0.83 (monthly) | Days without rain can work as an alert signal |
 
-### A4. Full statistical results
+### A6. Full statistical results
 
 | Test | Result | p-value | Effect size | Interpretation |
 | --- | --- | --- | --- | --- |
@@ -175,7 +177,7 @@ Data preparation, statistical tests and full results are in the [Appendix](#appe
 | Mann-Kendall (fire events per year) | Sen's slope −9 events/year | 0.049 | τ = −0.51 | Fire events declined, at the 5% limit |
 | Moran's I | I = 0.33 | 0.001 | — | Fire clusters in space |
 
-### A5. Normality tests
+### A7. Normality tests
 
 | Variable | n | Mean | Median | Skewness | Normal? |
 | --- | --- | --- | --- | --- | --- |
@@ -185,7 +187,7 @@ Data preparation, statistical tests and full results are in the [Appendix](#appe
 | Precipitation (mm) | 2,774 | 0.36 | 0.00 | 8.49 | No |
 | Fire risk | 2,747 | 0.93 | 1.00 | −3.52 | No |
 
-### A6. Recurrence intervals
+### A8. Recurrence intervals
 
 | Interval (whole years) | Recurrences | % | Cumulative % |
 | --- | --- | --- | --- |
@@ -201,7 +203,7 @@ Data preparation, statistical tests and full results are in the [Appendix](#appe
 
 **About the 7-year peak:** 18 of the 25 seven-year intervals come from the same area of Serra Dourada, burned by large fires in September 2017 and again in October 2024, with no hotspots in between. One large fire covers several grid cells, so it produces several recurrences. These cases were kept: they are real fires, not errors.
 
-### A7. Annual chance of a new fire, by years since the last one
+### A9. Annual chance of a new fire, by years since the last one
 
 | Years since last fire | Chance of burning that year | Cell-years |
 | --- | --- | --- |
@@ -210,9 +212,9 @@ Data preparation, statistical tests and full results are in the [Appendix](#appe
 | 3 | 13.5% | 851 |
 | 4 | 16.5% | 692 |
 
-**How this differs from A4:** the two measures count time differently. This table uses calendar years (a fire in 2020 makes 2021 "year 1"), so year 1 can include fires up to almost two years apart. Kaplan-Meier (A4) uses the exact time elapsed since each fire, so it shows 3.4% within 12 months. Both show the same pattern: risk is low right after a fire and rises from the second year.
+**How this differs from A6:** the two measures count time differently. This table uses calendar years (a fire in 2020 makes 2021 "year 1"), so year 1 can include fires up to almost two years apart. Kaplan-Meier (A6) uses the exact time elapsed since each fire, so it shows 3.4% within 12 months. Both show the same pattern: risk is low right after a fire and rises from the second year.
 
-### A8. Sensitivity to the size of the area
+### A10. Sensitivity to the size of the area
 
 | Cell size | Burned areas | Re-burned within 3 years | Median interval | Chance of fire in year 1 → year 2 |
 | --- | --- | --- | --- | --- |
@@ -223,12 +225,12 @@ Data preparation, statistical tests and full results are in the [Appendix](#appe
 
 The ~1.1 km grid was kept because it is larger than the satellite's position error and close to the scale of an inspection area. The jump in risk from year 1 to year 2 appears at every scale tested. Exact values at the larger scales depend on how the grid is aligned, so they are a guide, not precise estimates.
 
-### A9. The grass hypothesis
+### A11. The grass hypothesis
 
 - **The native grass layer recovers quickly.** In Cerrado *campo sujo*, about 70–80% of ground-layer biomass returns one year after fire, and about 100% after two years (Andrade, 1998; Neto et al., 1998, cited in Gorgone-Barbosa et al., 2016; Onigemo, Miranda & Haridasan, 2003).
 - **Invasive African grasses add fuel.** Species such as *Melinis minutiflora* (capim-gordura) and *Urochloa* spp. (braquiária) accumulate more biomass than native species, and flames in invaded plots were up to twice as tall (Gorgone-Barbosa et al., 2016; Pivello et al., 2021).
 
-### A10. Commander survey
+### A12. Commander survey
 
 | Statement | Result |
 | --- | --- |
@@ -238,11 +240,11 @@ The ~1.1 km grid was kept because it is larger than the satellite's position err
 | A dashboard showing high-risk areas would support prevention planning | 93.8% agree |
 | I am willing to use the proposed tool | 100% agree |
 
-### A11. Limitations
+### A13. Limitations
 
 - Heat hotspots are an indirect indicator: one fire can generate many hotspots, and small fires may go undetected.
 - Neighboring cells hit by the same large fire are not independent; p-values may be slightly optimistic.
-- Results depend on the size of the area analyzed (A8); the ideal unit would be the inspection sector used by CBMGO.
+- Results depend on the size of the area analyzed (A10); the ideal unit would be the inspection sector used by CBMGO.
 - No local data on vegetation, grass cover or biomass: the grass explanation relies on the literature.
 - Fire intensity (FRP) is missing for 38% of hotspots.
 - No data on ignition causes; hotspots not normalized by park area; correlations show association, not causation.
