@@ -29,6 +29,9 @@ Recurrence (the same location burning again) was observed in 8 of them. Paraúna
 ## Key Findings
 
 - **The 3-year rule does not hold: fire protects an area for about one year, not three.** Burning in one year halves the odds of burning again the next year (odds ratio 0.54; p < 0.001). By the second year, the annual chance of a new fire has already doubled, from 6.5% to 12.7%, and remains at or above that level in years 3 and 4 (13.5% and 16.5%).
+
+   ![The risk of a new fire doubles in the second year](assets/5_risk_doubles.png)
+
 - **More than 1 in 5 burned areas burns again within 3 years** (at the ~1 km scale used). Kaplan-Meier survival analysis shows that 12.6% of burned areas burned again within 2 years and 22.9% within 3 years (95% CI: 19.8–26.0%). A 3-year skip would leave exactly these areas off the inspection list.
 - **The most common interval was 2 years, consistent with the jump in risk in the second year.** Among the 500 recurrences, 2-year intervals were the most frequent (26.0%), followed closely by 4 and 3 years (23.2% and 22.4%).
 - **Three years is a typical gap, not a safe minimum.** The median interval between fires at the same location is 2.98 years, statistically no different from 3 (Wilcoxon, p = 0.28), and the mean is 3.05 years. The average is close to the assumption, but the risk returns long before it: what matters for inspections is when protection ends, not the average gap.
@@ -39,6 +42,8 @@ Recurrence (the same location burning again) was observed in 8 of them. Paraúna
   - **Dry spells:** months with more days without rain have far more hotspots (Spearman ρ = 0.83 across monthly averages).
   - **Clusters:** fire is spatially clustered (Moran's I = 0.33; p = 0.001).
   - **Speed varies by park:** recurrence intervals tend to be shorter in Araguaia (median 2.1 years) than in Serra Dourada (4.0 years).
+
+![Fire is predictable in space and time](assets/9_where_when.png)
 
 ## Hypothesis Tree
 
@@ -273,6 +278,8 @@ goias-wildfire-hotspots-bi-/
     ├── executive_presentation_wildfires_cerrado_goias.pptx
     ├── 1_cover.png
     ├── 3_hypothesis_tree.png
+    ├── 5_risk_doubles.png
+    ├── 9_where_when.png
     └── dashboard_preview.png, dashboard_map.png, dashboard_heatmap.png
 ```
 
