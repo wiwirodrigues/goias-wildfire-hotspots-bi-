@@ -45,7 +45,7 @@ Recurrence (the same location burning again) was observed in 8 of them. Paraúna
 **Hypothesis:** burned areas in Goiás state parks stay safe from new fires for about three years, while fuel recovers. All conditions must be true for the hypothesis to hold (AND logic); one false condition is enough to reject it.
 
 
-![Hypothesis tree](assets/hypothesis_tree.png)
+![Hypothesis tree](assets/3_hypothesis_tree.png)
 
 
 
@@ -272,7 +272,7 @@ goias-wildfire-hotspots-bi-/
     ├── executive_presentation_wildfires_cerrado_goias.pdf
     ├── executive_presentation_wildfires_cerrado_goias.pptx
     ├── 1_cover.png
-    ├── hypothesis_tree.png
+    ├── 3_hypothesis_tree.png
     └── dashboard_preview.png, dashboard_map.png, dashboard_heatmap.png
 ```
 
