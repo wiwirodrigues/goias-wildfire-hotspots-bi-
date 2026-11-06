@@ -29,7 +29,7 @@ Recurrence (the same location burning again) was observed in 8 of them. Paraúna
 ## Key Findings
 
 - **The 3-year rule does not hold: fire protects an area for about one year, not three.** Burning in one year halves the odds of burning again the next year (odds ratio 0.54; p < 0.001). By the second year, the annual chance of a new fire has already doubled, from 6.5% to 12.7%, and remains at or above that level in years 3 and 4 (13.5% and 16.5%).
-- **More than 1 in 5 burned areas burns again within 3 years** (at the ~1 km scale used). Kaplan-Meier survival analysis shows that 12.6% of burned areas burned again within 2 years and 22.9% within 3 years (95% CI: 19.7–26.0%). A 3-year skip would leave exactly these areas off the inspection list.
+- **More than 1 in 5 burned areas burns again within 3 years** (at the ~1 km scale used). Kaplan-Meier survival analysis shows that 12.6% of burned areas burned again within 2 years and 22.9% within 3 years (95% CI: 19.8–26.0%). A 3-year skip would leave exactly these areas off the inspection list.
 - **The most common interval was 2 years, consistent with the jump in risk in the second year.** Among the 500 recurrences, 2-year intervals were the most frequent (26.0%), followed closely by 4 and 3 years (23.2% and 22.4%).
 - **Three years is a typical gap, not a safe minimum.** The median interval between fires at the same location is 2.98 years, statistically no different from 3 (Wilcoxon, p = 0.28), and the mean is 3.05 years. The average is close to the assumption, but the risk returns long before it: what matters for inspections is when protection ends, not the average gap.
 - **Why protection ends so early: grasses are the leading explanation.** Cerrado studies report that the native grass layer recovers 70–80% of its biomass one year after fire and about 100% after two years, and invasive African grasses add even more fuel. This matches the jump in risk in the second year. This explanation comes from the literature and was not tested with project data.
@@ -79,7 +79,7 @@ A **commander survey** (Google Forms, 11 closed Likert questions) was answered b
 - Records with missing fire risk (27, coded −999 by INPE) were excluded only from the analyses that use that variable
 - Grouped hotspots into a **0.01° grid** (cells of about 1.1 km, ~120 ha), the unit used to define "the same location"
 - Treated hotspots in the same cell less than 180 days apart as **one fire event** (the same fire season)
-- Calculated the **interval of recurrence** as the time, in years, between consecutive fire events in the same cell: **500 recurrences** across 718 burned cells (350 of them burned more than once)
+- Calculated the **interval of recurrence** as the time, in years, between consecutive fire events in the same cell: **500 recurrences** across 717 burned cells (350 of them burned more than once)
 
 ## Analysis
 
@@ -154,13 +154,13 @@ A **commander survey** (Google Forms, 11 closed Likert questions) was answered b
 | --- | --- | --- | --- | --- |
 | Wilcoxon (median = 3 years) | Median 2.98 years | 0.284 | r = 0.05 | The median interval does not differ from 3 years |
 | Binomial (< 3 years > 50%) | 257 of 500 = 51.4% | 0.281 | h = 0.03 | About half of recurrences happen before 3 years |
-| Kaplan-Meier | 3.4% · 12.6% · 22.9% re-burned at 1, 2 and 3 years | — | 95% CI at 3 years: 19.7–26.0% | More than 1 in 5 burned areas burns again within 3 years |
+| Kaplan-Meier | 3.4% · 12.6% · 22.9% re-burned at 1, 2 and 3 years | — | 95% CI at 3 years: 19.8–26.0% | More than 1 in 5 burned areas burns again within 3 years |
 | Logistic regression | Odds ratio 0.54 (95% CI 0.41–0.71) | < 0.001 | 6.5% vs 11.4% | Fire halves the next-year odds; by year 2 the risk doubles (OR ≈ 2.1) |
 | Spearman: days without rain × hotspots (monthly, n = 12) | ρ = 0.83 (Pearson r = 0.42) | < 0.001 (Pearson 0.178) | Strong | Drier months have far more hotspots; the relationship is not linear |
 | Spearman: days without rain × hotspots (year-month, n = 69) | ρ = 0.36 | 0.002 | Moderate | The association holds at a finer time scale |
 | Spearman: fire risk × hotspots (monthly) | ρ = 0.85 | < 0.001 | Strong | INPE's fire-risk index tracks hotspot counts |
 | Spearman: precipitation × hotspots (monthly) | ρ = −0.35 | 0.263 | Weak | No significant association |
-| Mann-Whitney (FRP, < 3 vs ≥ 3 years) | 8.44 vs 9.00 MW | 0.030 | r = 0.09 | Frequent fire is only slightly less intense |
+| Mann-Whitney (FRP, < 3 vs ≥ 3 years) | 8.44 vs 9.10 MW | 0.047 | r = 0.09 | Frequent fire is only slightly less intense |
 | Kruskal-Wallis (interval by park) | H(7) = 43.5 | < 0.001 | ε² = 0.074 | The distribution of intervals differs by park: shorter in Araguaia (median 2.1 years) than in Serra Dourada (4.0) and Pirineus (4.6) |
 | Kruskal-Wallis (FRP by park) | H(7) = 174.7 | < 0.001 | ε² = 0.10 | Fire intensity tends to be higher in Altamiro, João Leite and Pirineus |
 | Chi-square (months) | χ²(11) = 9,247 | < 0.001 | V = 0.55 | Strong seasonality |
@@ -184,7 +184,7 @@ A **commander survey** (Google Forms, 11 closed Likert questions) was answered b
 | --- | --- | --- | --- |
 | 1 year | 78 | 15.6% | 15.6% |
 | 2 years | 130 | 26.0% | 41.6% |
-| 3 years | 112 | 22.4% | 64.1% |
+| 3 years | 112 | 22.4% | 64.0% |
 | 4 years | 116 | 23.2% | 87.2% |
 | 5 years | 23 | 4.6% | 91.8% |
 | 6 years | 15 | 3.0% | 94.8% |
@@ -198,10 +198,10 @@ A **commander survey** (Google Forms, 11 closed Likert questions) was answered b
 
 | Years since last fire | Chance of burning that year | Cell-years |
 | --- | --- | --- |
-| 1 | 6.5% | 1,190 |
-| 2 | 12.7% | 1,029 |
-| 3 | 13.5% | 852 |
-| 4 | 16.5% | 693 |
+| 1 | 6.5% | 1,189 |
+| 2 | 12.7% | 1,028 |
+| 3 | 13.5% | 851 |
+| 4 | 16.5% | 692 |
 
 **How this differs from A1:** the two measures count time differently. This table uses calendar years (a fire in 2020 makes 2021 "year 1"), so year 1 can include fires up to almost two years apart. Kaplan-Meier (A1) uses the exact time elapsed since each fire, so it shows 3.4% within 12 months. Both show the same pattern: risk is low right after a fire and rises from the second year.
 
@@ -209,12 +209,12 @@ A **commander survey** (Google Forms, 11 closed Likert questions) was answered b
 
 | Cell size | Burned areas | Re-burned within 3 years | Median interval | Chance of fire in year 1 → year 2 |
 | --- | --- | --- | --- | --- |
-| ~375 m (satellite pixel) | 2,170 | 5.8% | 3.9 years | 1.2% → 2.9% |
-| **~1.1 km (used)** | **718** | **22.9%** | **3.0 years** | **6.5% → 12.7%** |
-| ~2.2 km | 269 | 40.6% | 2.1 years | 17.3% → 21.3% |
-| ~5 km | 84 | 59.3% | 1.3 years | 38.8% → 33.6% |
+| ~375 m (satellite pixel) | 2,165 | 5.8% | 3.9 years | 1.4% → 3.0% |
+| **~1.1 km (used)** | **717** | **22.9%** | **3.0 years** | **6.5% → 12.7%** |
+| ~2.2 km | 261 | 44.3% | 2.1 years | 16.2% → 25.4% |
+| ~5 km | 78 | 60.3% | 1.7 years | 37.3% → 41.9% |
 
-The ~1.1 km grid was kept because it is larger than the satellite's position error and close to the scale of an inspection area. The jump in risk from year 1 to year 2 holds at every scale up to ~2 km.
+The ~1.1 km grid was kept because it is larger than the satellite's position error and close to the scale of an inspection area. The jump in risk from year 1 to year 2 appears at every scale tested. Exact values at the larger scales depend on how the grid is aligned, so they are a guide, not precise estimates.
 
 ### A6. The grass hypothesis
 
@@ -245,6 +245,7 @@ The ~1.1 km grid was kept because it is larger than the satellite's position err
 - **QGIS:** spatial overlay of hotspots and park boundaries
 - **Excel:** data cleaning, frequency tables and first descriptive analysis
 - **Power BI:** interactive dashboard
+- **Python (numpy, pandas, scipy):** statistical tests, in [`code/analysis.py`](code/analysis.py)
 - **Google Forms:** commander survey
 
 ## Project Structure
@@ -255,15 +256,22 @@ goias-wildfire-hotspots-bi-/
 ├── README.md
 │
 ├── data/
+│   ├── focos_e_parques_31982.gpkg  (original QGIS export, used by the script)
 │   ├── focos_final_powerbi.xlsx    (heat hotspots)
 │   └── ucs_com_frp_4326.xlsx       (state parks)
 │
 ├── powerbi/
 │   └── fire_hotspots.pbix
 │
+├── code/
+│   ├── analysis.py                 (reproduces every statistic)
+│   ├── report.txt                  (printed output)
+│   └── results.csv
+│
 └── assets/
     ├── executive_presentation_wildfires_cerrado_goias.pdf
     ├── executive_presentation_wildfires_cerrado_goias.pptx
+    ├── 1_cover.png
     ├── hypothesis_tree.png
     └── dashboard_preview.png, dashboard_map.png, dashboard_heatmap.png
 ```
