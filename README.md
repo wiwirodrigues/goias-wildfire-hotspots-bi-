@@ -10,7 +10,7 @@ Power BI, QGIS and Excel analysis of 2,774 satellite heat hotspots recorded in 9
 
 ## Key Findings
 
-- **The 3-year rule does not hold: fire protects an area for about one year, not three.** Burning in one year halves the odds of burning again the next year (odds ratio 0.54; p < 0.001). By the second year, the annual chance of a new fire has already doubled, from 6.5% to 12.7%, and remains at or above that level in years 3 and 4 (13.5% and 16.5%).
+- **The 3-year rule does not hold: fire protects an area for about one year, not three.** An area that burned is about half as likely to burn again the following year (odds ratio 0.54; p < 0.001). By the second year, the annual chance of a new fire has already doubled, from 6.5% to 12.7%, and remains at or above that level in years 3 and 4 (13.5% and 16.5%).
 
    ![The risk of a new fire doubles in the second year](assets/5_risk_doubles.png)
 
