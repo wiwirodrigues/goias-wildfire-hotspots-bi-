@@ -49,7 +49,7 @@ The hypothesis tree, sample delimitation, variables, data preparation, statistic
 | **1** | **Do not adopt the 3-year skip.** Keep burned areas on the inspection list from the second year after a fire | The risk of a new fire doubles in year 2; 22.9% re-burn within 3 years | Before the next fire season |
 | **2** | **Rank park sectors by risk** (fire history, month and days without rain) and send crews to the highest-ranked sectors first | Fire is predictable in space and time | Ranking ready by June |
 | **3** | **Focus pre-season prevention on Terra Ronca and Serra Dourada:** firebreaks and patrols in June–July | 71% of hotspots fall in these two parks; 91% between August and October | June–July |
-| **4** | **Use drought as an alert:** raise patrol frequency when days without rain increase | Drier months have far more hotspots | During the dry season |
+| **4** | **Use the season and INPE's fire-risk index as alerts:** raise patrol frequency from August to October and when INPE's fire-risk index is high. Set the exact trigger with CBMGO during the pilot season | 90.8% of hotspots fall between August and October; INPE's fire-risk index tracks hotspot counts (ρ = 0.85) | August–October |
 
 ## Next Steps
 
@@ -57,6 +57,7 @@ The hypothesis tree, sample delimitation, variables, data preparation, statistic
 2. **Define the inspection unit with CBMGO** (patrol sector or firebreak-bounded area) and rerun the analysis at that scale.
 3. **Test the grass hypothesis** with MapBiomas land-cover and burned-area maps, comparing re-burn intervals in grassland, savanna and invaded areas.
 4. **Refresh the dashboard every season** with new INPE data and normalize hotspots by park area.
+5. **Set an alert threshold** using daily rain and fire-risk data for all days, not only days with hotspots.
 
 ## Power BI Dashboard
 
@@ -155,7 +156,7 @@ Recurrence (the same location burning again) was observed in 8 of them. Paraúna
 | Three years is only the typical gap | Median 2.98 years; mode 2 years | The average cannot be used as a safe period |
 | Fire concentrates in two parks | 71.3% in Terra Ronca and Serra Dourada | Most prevention effort belongs there |
 | Fire concentrates in three months | 90.8% between August and October | Prevention must be ready before August |
-| Drought goes with fire | Spearman ρ = 0.83 (monthly) | Days without rain can work as an alert signal |
+| Fire follows the dry season | Spearman ρ = 0.83 (days without rain) and 0.85 (fire risk), monthly | Use the season and INPE's fire-risk index as alerts; days without rain alone is not a reliable trigger |
 
 ### A7. Full statistical results
 
