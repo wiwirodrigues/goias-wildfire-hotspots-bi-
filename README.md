@@ -4,7 +4,9 @@ Power BI, QGIS and Excel analysis of 2,774 satellite heat hotspots recorded in 9
 
 **[View the interactive Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiNWRkNDQwN2QtOGRjOS00NjMwLTkzNTctMTBkMDZmZjY2YzhlIiwidCI6Ijk1NDYxM2ZhLWUzN2UtNDZkNi04NGYxLTJmYjNmMzY3MjExMyJ9)**
 
-📄 [Read the executive presentation (PDF)](assets/executive_presentation_wildfires_cerrado_goias.pdf)
+[Read the executive presentation (PDF)](assets/executive_presentation_wildfires_cerrado_goias.pdf)
+
+![Executive presentation cover](assets/1_cover.png)
 
 ## Sample Delimitation
 
